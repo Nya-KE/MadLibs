@@ -7,12 +7,12 @@ $(document).ready(function() {
         var exclamationInput = $("input#exclamation").val();
         var verbInput = $("input#verb").val();
         var nounInput = $("input#noun").val();
-        $(".person1").append(person1Input);
-        $(".person2").append(person2Input);
-        $(".animal").append(animalInput);
-        $(".exclamation").append(exclamationInput);
-        $(".verb").append(verbInput);
-        $(".noun").append(nounInput);
+        $(".person1").text(person1Input);
+        $(".person2").text(person2Input);
+        $(".animal").text(animalInput);
+        $(".exclamation").text(exclamationInput);
+        $(".verb").text(verbInput);
+        $(".noun").text(nounInput);
 
         $("#story").show();
 
@@ -23,12 +23,12 @@ $(document).ready(function() {
 /* PUTTING BLAH BLAH INTO Story
 $(document).ready(function() {
     $("#blanks form").submit(function(event) {
-        $(".person1").append("blah blah");
-        $(".person2").append("blah blah");
-        $(".animal").append("blah blah");
-        $(".exclamation").append("blah blah");
-        $(".verb").append("blah blah");
-        $(".noun").append("blah blah");
+        $(".person1").text("blah blah");
+        $(".person2").text("blah blah");
+        $(".animal").text("blah blah");
+        $(".exclamation").text("blah blah");
+        $(".verb").text("blah blah");
+        $(".noun").text("blah blah");
 
         $("#story").show();
 
